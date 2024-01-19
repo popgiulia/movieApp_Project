@@ -16,9 +16,12 @@
         android:theme="@style/Theme.MovieApp_Project"
         tools:targetApi="31">
         <activity
-            android:name=".data.value_object.Movie2"
-
-            >
+            android:name=".ui.movie_details.Movie"
+            android:label="Detalii Film"
+            android:parentActivityName=".ui.popular_movie.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.popular_movie.MainActivity" />
         </activity>
 
         <activity
@@ -26,7 +29,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
