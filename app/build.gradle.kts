@@ -47,7 +47,6 @@ dependencies {
 
     //ViewModel
     implementation("androidx.lifecycle:lifecycle-extensions:2.2.0")
-
     //Recyclerview
     implementation("androidx.recyclerview:recyclerview-selection:1.1.0-alpha05")
     implementation("androidx.cardview:cardview:1.0.0")
