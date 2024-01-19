@@ -50,7 +50,7 @@ object MovieDB_Client {
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(MovieDBInterface::class.java)  // this line of code can be removed and added in the part where it is instantiated
+            .create(MovieDBInterface::class.java)
     }
 
 }

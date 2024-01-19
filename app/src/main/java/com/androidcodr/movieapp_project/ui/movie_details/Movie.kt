@@ -47,7 +47,7 @@ class Movie : AppCompatActivity() {
             bindUI(it)
         })
 
-        // Find progress bar and text view by their IDs
+
         progressbar = findViewById(R.id.progress_bar)
         txtError = findViewById(R.id.txt_error)
 

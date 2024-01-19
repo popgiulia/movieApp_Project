@@ -23,10 +23,8 @@ class MovieDetailsRepository(private val apiService: MovieDBInterface) {
 
     fun getMovieDetailsNetworkState(): LiveData<NetworkState> {
         if (!::movieDetailsNetworkDataSource.isInitialized) {
-            // Handle the situation where network data source is not initialized
-            // This might be an error or just a case where it's not meant to be used
+            //
         }
-
         return movieDetailsNetworkDataSource.networkState
     }
 }

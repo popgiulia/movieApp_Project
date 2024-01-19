@@ -16,7 +16,7 @@
         android:theme="@style/Theme.MovieApp_Project"
         tools:targetApi="31">
         <activity
-            android:name=".ui.movie_details.Movie"
+            android:name=".data.value_object.Movie2"
 
             >
         </activity>
