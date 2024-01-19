@@ -69,4 +69,7 @@ dependencies {
     //Rx
     implementation("io.reactivex.rxjava2:rxjava:2.2.7")
     implementation("io.reactivex.rxjava2:rxandroid:2.1.1")
+
+    // Picasso
+    implementation("com.squareup.picasso:picasso:2.8")
 }

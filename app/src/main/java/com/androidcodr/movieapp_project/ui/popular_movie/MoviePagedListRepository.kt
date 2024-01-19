@@ -45,6 +45,8 @@ class MoviePagedListRepository (private val apiService : MovieDBInterface) {
   private val TAG = "MoviePagedListRepository"
     private val compositeDisposable = CompositeDisposable()
 
+    // ... other methods ...
+
     fun getMoviePagedList(networkState: MutableLiveData<NetworkState>): LiveData<PagedList<Movie2>> {
         Log.d(TAG, "getMoviePagedList: called")
 
@@ -52,6 +54,7 @@ class MoviePagedListRepository (private val apiService : MovieDBInterface) {
 
 
         val config = PagedList.Config.Builder()
+            // ... other configurations ...
             .build()
 
         val executor = Executors.newFixedThreadPool(5)

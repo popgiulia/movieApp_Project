@@ -15,6 +15,7 @@ import com.androidcodr.movieapp_project.R
 import com.androidcodr.movieapp_project.data.api.POSTER_BASE_URL
 import com.androidcodr.movieapp_project.data.repository.NetworkState
 import com.androidcodr.movieapp_project.data.value_object.Movie2
+import com.androidcodr.movieapp_project.ui.movie_details.Movie
 import com.bumptech.glide.Glide
 
 
@@ -87,7 +88,7 @@ class PopularMoviePagedListAdapter(public val context: Context) : PagedListAdapt
                 .into(moviePoster)
 
             itemView.setOnClickListener{
-                val intent = Intent(context, Movie2::class.java)
+                val intent = Intent(context, Movie::class.java)
                 intent.putExtra("id", movie?.id)
                 context.startActivity(intent)
             }
